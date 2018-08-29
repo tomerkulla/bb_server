@@ -41,7 +41,7 @@ Implantation using **Java**, **C++** and **JSON**
 		* for **Reactor** Thread-Management:<br/>
 		`mvn exec:java -Dexec.mainClass=bgu.spl181.net.impl.BBreactor.ReactorMain -Dexec.args=[port]`
 		* for **TCP** Thread-Management:<br/> 
-		`mvn exec:java -Dexec.mainClass=bgu.spl181.net.impl.BBtpc.TPCMain -Dexec.args=”[port]”`
+		`mvn exec:java -Dexec.mainClass=bgu.spl181.net.impl.BBtpc.TPCMain -Dexec.args=[port]`
 1. Clients:
 	* inside ../Client:
 		* Run `make`.
