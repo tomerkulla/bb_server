@@ -1,7 +1,8 @@
 ![BB Logo](https://vignette.wikia.nocookie.net/althistory/images/7/73/Blockbuster_Online_logo_%28Alternity%29.png/revision/latest?cb=20140103023924)
 
 BB-Server is an online movie rental server-client system.<br/> 
-The communication between the server and the client(s) will be performed using a text based communication protocol, which will support renting, listing and returning of movies. The implementation of the server will be based on the **Thread-Per-Client** (TPC) or **Reactor** (Thread Pool).<br/> 
+The communication between the server and the client(s) is performed using a text based communication protocol, which supports renting, listing and returning of movies.<br/> 
+The thread-management-design of the server is based on the **Thread-Per-Client** (TPC) or **Reactor** (Thread Pool) .<br/> 
 Implantation using **Java**, **C++** and **JSON**
 <br/> 
 ## Supported Commands:
