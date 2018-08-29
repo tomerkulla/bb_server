@@ -10,7 +10,8 @@ Implantation using **Java**, **C++** and **JSON**
 ### Server:
 1. **ACK** [message]
 1. **ERROR** <error message>
-1. **BROADCAST** <message>
+1. **BROADCAST** <message> <br/> 
+**note:** an example database is provided (Users and Movies).
   
 ### Client:
 1. **REGISTER** [username] [password] country=”[country name]”
@@ -37,14 +38,14 @@ Implantation using **Java**, **C++** and **JSON**
 1. Establishing Server:
 	* inside ../Server:
 		* Run `mvn clean compile`
-		* for **Reactor** Thread-Management:<br/> 
-		`mvn exec:java -Dexec.mainClass=”bgu.spl181.net.impl.BBreactor.ReactorMain” -Dexec.args=”[port]”`
+		* for **Reactor** Thread-Management:<br/>
+		`mvn exec:java -Dexec.mainClass=bgu.spl181.net.impl.BBreactor.ReactorMain -Dexec.args=[port]`
 		* for **TCP** Thread-Management:<br/> 
-		`mvn exec:java -Dexec.mainClass=”bgu.spl181.net.impl.BBtpc.TPCMain” -Dexec.args=”[port]”`
+		`mvn exec:java -Dexec.mainClass=bgu.spl181.net.impl.BBtpc.TPCMain -Dexec.args=”[port]”`
 1. Clients:
 	* inside ../Client:
 		* Run `make`.
-		* bin/BBclient [ip] [port] //CHECKKK if its in bin
+		* Run `bin/BBclient [ip] [port]`
 		
 ### Requirements:
 
