@@ -45,7 +45,7 @@ Implantation using **Java**, **C++** and **JSON**
 		* Run `make`.
 		* bin/BBclient [ip] [port] //CHECKKK if its in bin
 		
-## Requirements:
+### Requirements:
 
 * Boost library:<br/>
 https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html
@@ -53,7 +53,7 @@ https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html
 https://maven.apache.org/install.html
 
 ## Tested:
-* *Compiles successfully on 64bit Ubuntu-16.78 . Should also compile on other linux variants.
+* Compiles successfully on 64bit Ubuntu-16.78 . Should also compile on other linux variants.
 
 	
 
