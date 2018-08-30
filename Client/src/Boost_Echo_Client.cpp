@@ -1,12 +1,7 @@
 #include <stdlib.h>
-//#include <connectionHandler.h>
 #include <iostream>
 #include "../include/connectionHandler.h"
 #include <boost/thread.hpp>
-
-/**
-* This code assumes that the server replies the exact text the client sent it (as opposed to the practical session example)
-*/
 
 bool disconnect(false);
 bool disconnectAns(false);
@@ -46,8 +41,8 @@ int main (int argc, char *argv[]) {
         std::cerr << "Usage: " << argv[0] << " host port" << std::endl << std::endl;
         return -1;
     }
-    std::string host = argv[1]; //!!!!!!!
-    short port = atoi(argv[2]); //!!!!!
+    std::string host = argv[1]; 
+    short port = atoi(argv[2]); 
     
     ConnectionHandler connectionHandler(host, port);
     if (!connectionHandler.connect()) {
